@@ -5,9 +5,9 @@
  
 #Requirements
 
-*Python 3.x
-*Flask
-*SQLAlchemy
-*Selenium
-*BeautifulSoup
-*Chrome 瀏覽器及其 WebDriver
+ Python 3.x
+ Flask
+ SQLAlchemy
+ Selenium
+ BeautifulSoup
+ Chrome 瀏覽器及其 WebDriver
