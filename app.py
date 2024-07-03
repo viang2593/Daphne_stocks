@@ -48,10 +48,10 @@ def clear_database():
 def get_stock_data(stock_code):
     chrome_options = ChromeOptions()
     chrome_options.add_argument("--headless")
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome(options=chrome_options)#不顯示瀏覽器爬取
     browser.get(f"https://tw.stock.yahoo.com/quote/{stock_code}")
 
-    wait = WebDriverWait(browser, 10)
+    wait = WebDriverWait(browser, 2)#等待兩秒
     element = wait.until(EC.presence_of_element_located((By.ID, "layout-col1")))
 
     html_source = browser.page_source
