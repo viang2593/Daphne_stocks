@@ -31,11 +31,19 @@ python app.py
 5. 開啟瀏覽器  
 在瀏覽器中輸入 http://127.0.0.1:5000/ 以訪問應用程式。
 
-## 使用教學與流程
-輸入股票代碼： 在首頁的表單中，輸入1~5隻股票的代碼並提交。  (範例為抓取2隻股票代碼)
-![Image text](https://github.com/viang2593/Daphne_stocks/blob/e98bb53cb773af00ebac610a7ef6759b07d76832/image/%E8%BC%B8%E5%85%A5%E8%82%A1%E7%A5%A8%E4%BB%A3%E7%A2%BC.png)
+## 使用教學與流程  
 
-查看股票資訊： 提交後，將顯示股票代碼、公司名稱、成交量、最終價、開盤價、最高價、最低價、昨日收盤價、漲跌、漲跌幅和更新時間等詳細資訊。
+輸入股票代碼： 在首頁的表單中，輸入1~5隻股票的代碼並提交。  (範例為抓取2隻股票代碼)  
+![Image text](https://github.com/viang2593/Daphne_stocks/blob/e98bb53cb773af00ebac610a7ef6759b07d76832/image/%E8%BC%B8%E5%85%A5%E8%82%A1%E7%A5%A8%E4%BB%A3%E7%A2%BC.png)  
+
+獲取股票資訊： 提交後，將顯示股票代碼、公司名稱、成交量、最終價、開盤價、最高價、最低價、昨日收盤價、漲跌、漲跌幅和更新時間等詳細資訊。  
+![Image text](https://github.com/viang2593/Daphne_stocks/blob/4f1f063bc7226a7016ea0becbbd7159d3e0342a0/image/%E7%8D%B2%E5%BE%97%E8%82%A1%E7%A5%A8%E8%B3%87%E8%A8%8A.png)  
+
+存進資料庫： 資料抓取後會自動存入資料庫，若關閉後再開啟新頁面則資料庫會清空。  
+![Image text](https://github.com/viang2593/Daphne_stocks/blob/4f1f063bc7226a7016ea0becbbd7159d3e0342a0/image/%E6%88%90%E5%8A%9F%E5%AD%98%E5%85%A5%E8%B3%87%E6%96%99%E5%BA%AB.png)  
+
+#### 最多一次可以抓取五支股票!
+![Image text](https://github.com/viang2593/Daphne_stocks/blob/4f1f063bc7226a7016ea0becbbd7159d3e0342a0/image/%E6%9C%80%E5%A4%9A%E7%88%AC%E5%8F%965%E9%9A%BB.png)
 
 
 
