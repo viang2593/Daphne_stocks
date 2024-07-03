@@ -51,3 +51,4 @@ python app.py
 在未關閉頁面的情況下也都會成功存入資料庫
 ![Image text](https://github.com/viang2593/Daphne_stocks/blob/d8e847b326b4e9f920253abd91ad983e21ea6afe/image/%E5%85%A8%E9%83%A8%E9%83%BD%E6%9C%89%E6%88%90%E5%8A%9F%E5%AD%98%E5%85%A5.png)
 
+## 感謝您的觀看!
