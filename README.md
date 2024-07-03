@@ -7,7 +7,7 @@
 
 ## Requirements 
 
-在開始使用之前，請確保你的開發環境中安裝了以下軟體：
+在開始使用之前，請確保你的開發環境中安裝了以下模組或插件：
 
 - Python 3.x
 - Flask
@@ -15,4 +15,19 @@
 - Selenium
 - BeautifulSoup
 - Chrome 瀏覽器及其 WebDriver
+
+## 安裝與設置
+
+1. 下載程式碼：
+git clone <repository-url>
+cd stock-data-web-app
+
+2. 安裝套件：
+pip install -r requirements.txt
+
+3. 執行程式
+python app.py
+
+4. 開啟瀏覽器
+在瀏覽器中輸入 http://127.0.0.1:5000/ 以訪問應用程式。
 
