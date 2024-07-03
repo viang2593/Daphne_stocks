@@ -19,15 +19,15 @@
 ## 安裝與設置
 
 1. 下載程式碼：
-git clone <repository-url>
-cd stock-data-web-app
+git clone <repository-url>  
+cd stock-data-web-app  
 
 2. 安裝套件：
-pip install -r requirements.txt
+pip install -r requirements.txt  
 
 3. 執行程式
-python app.py
+python app.py  
 
 4. 開啟瀏覽器
-在瀏覽器中輸入 http://127.0.0.1:5000/ 以訪問應用程式。
+在瀏覽器中輸入 http://127.0.0.1:5000/ 以訪問應用程式。  
 
