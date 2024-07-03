@@ -45,7 +45,7 @@ python app.py
 資料抓取後會自動存入資料庫，若關閉後再開啟新頁面則資料庫會清空。  
 ![Image text](https://github.com/viang2593/Daphne_stocks/blob/4f1f063bc7226a7016ea0becbbd7159d3e0342a0/image/%E6%88%90%E5%8A%9F%E5%AD%98%E5%85%A5%E8%B3%87%E6%96%99%E5%BA%AB.png)  
 
-***最多一次可以抓取五支股票!
+*** 最多一次可以抓取五支股票!
 ![Image text](https://github.com/viang2593/Daphne_stocks/blob/4f1f063bc7226a7016ea0becbbd7159d3e0342a0/image/%E6%9C%80%E5%A4%9A%E7%88%AC%E5%8F%965%E9%9A%BB.png)
 
 在未關閉頁面的情況下也都會成功存入資料庫
