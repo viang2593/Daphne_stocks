@@ -13,7 +13,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-# 步驟 1：定義資料庫結構並創建資料庫引擎
+# 步驟 1：定義資料庫
 engine = create_engine('sqlite:///stock_data.db', echo=True)
 Base = declarative_base()
 
@@ -33,13 +33,18 @@ class StockData(Base):
     change_rate = Column(String)
     updated_time = Column(DateTime, default=datetime.now)
 
-# 確保資料庫初始化
+# 資料庫初始化
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# 步驟 2：爬取和存儲數據
+def clear_database():
+    # 删除數據
+    session.query(StockData).delete()
+    session.commit()
+
+
 def get_stock_data(stock_code):
     chrome_options = ChromeOptions()
     chrome_options.add_argument("--headless")
@@ -107,8 +112,7 @@ def get_stock_data(stock_code):
     session.add(stock_data)
     session.commit()
 
-    # 調試用：確認資料被正確寫入資料庫
-    print(f"Stock data saved to database: {stock_data}")
+
 
     return {
         'code': code,
@@ -144,10 +148,10 @@ def index():
     # 從資料庫中讀取所有股票數據
     stock_data_list = session.query(StockData).all()
 
-    # 調試用：確認從資料庫中讀取的資料
-    print(f"Stock data retrieved from database: {stock_data_list}")
+
 
     return render_template('index.html', stock_data_list=stock_data_list)
 
 if __name__ == '__main__':
+    clear_database()
     app.run(debug=True)
