@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request
 from sqlalchemy import create_engine, Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
@@ -13,7 +14,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-# 步驟 1：定義資料庫
+# 定義資料庫
 engine = create_engine('sqlite:///stock_data.db', echo=True)
 Base = declarative_base()
 
@@ -128,7 +129,7 @@ def get_stock_data(stock_code):
         'updated_time': time2
     }
 
-# 步驟 3：從資料庫中讀取並渲染數據到網頁
+# 從資料庫中讀取並渲染數據到網頁
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
