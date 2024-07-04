@@ -34,7 +34,6 @@ class StockData(Base):
     change_rate = Column(String)
     updated_time = Column(DateTime, default=datetime.now)
 
-# 資料庫初始化
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
@@ -146,7 +145,6 @@ def index():
 
         return render_template('index.html', stock_data_list=stock_data_list)
 
-    # 從資料庫中讀取所有股票數據
     stock_data_list = session.query(StockData).all()
 
 
